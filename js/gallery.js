@@ -71,7 +71,9 @@ function createGallery(images) {
     .map(
       image =>
         `<li class="gallery-item">
+      <a class="gallery-link" href="${image.original}">
       <img src="${image.preview}" alt="${image.description}" class="gallery-image" data-source="${image.original}"/>
+      </a>
     </li>`
     )
     .join('');
